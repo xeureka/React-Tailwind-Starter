@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import {FaArrowUp} from 'react-icons/fa'
 
 const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -16,7 +17,7 @@ const ScrollToTop = () => {
     return () => window.removeEventListener('scroll', toggleVisibility);
   }, []);
 
-  // Scroll to the top
+// scroll to the top
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -47,7 +48,7 @@ const ScrollToTop = () => {
             zIndex: 1000,
           }}
         >
-          ⬆
+          {<FaArrowUp />}
         </button>
       )}
     </div>
