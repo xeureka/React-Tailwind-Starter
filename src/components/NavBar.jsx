@@ -1,5 +1,7 @@
 import React from 'react'
 
+
+// addes a return to top behavior when the logo is clicked
 const NavBar = () => {
     function scrollTop(){
         window.scrollTo({
